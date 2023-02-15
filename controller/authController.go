@@ -77,7 +77,7 @@ func Login(c *fiber.Ctx) error {
 	if user.Id == 0 {
 		c.Status(404)
 		return c.JSON(fiber.Map{
-			"message": "Email Address doesn't, findly create an account",
+			"message": "Email Address doesn't exist, findly create an account",
 		})
 	}
 
